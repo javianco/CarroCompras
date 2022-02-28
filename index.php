@@ -17,40 +17,40 @@
 <html>
 <head>
 <title>Carro de Compras</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
  
 </head>
 <body>
 <header>
-    <div class="topbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 text-sm">
-            <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span>+59382639311</a>
-              <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span>www.andradeAsociados.com</a>
-            </div>
-          </div>
-          <div class="col-sm-4 text-right text-sm">
-            <div class="social-mini-button">
-              <a href="https://www.facebook.com/silkyclothes.ec"><span class="fa fa-twitter">facebook</span></a>
-              <a href="#"><span class="mai-logo-twitter">twiter</span></a>
-              <a href="https://instagram.com/silkyclothes.ec?utm_medium=copy_link"><span class="mai-logo-instagram">Instagram</span></a>
-            </div>
-          </div>
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .topbar -->
-
-    <!--<nav class="navbar navbar-expand-lg navbar-light shadow-sm">-->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">   
+       <ul class="nav justify-content-end">
+           <li class="nav-item">
+           <a class="nav-link" href="http://www.instagram.com/silkyclothes.ec"> <img src="Imagenes/globe2.svg" alt="facebook">  www.silkyclothes.com</a>
+           </li>
+           <span class="divider">||</span>
+           <li class="nav-item">
+           <a class="nav-link" href="https://instagram.com/silkyclothes.ec?utm_medium=copy_link"> <img src="Imagenes/pngwing.com.png " height="20" width="20">  Instagram</a>
+           
+           </li>
+           <span class="divider">||</span>
+           <li class="nav-item">
+           <a class="nav-link" href="https://www.facebook.com/silkyclothes.ec"> <img src="Imagenes/facebook.svg" alt="facebook">  facebook</a>
+           </li>
+           <span class="divider">||</span>
+           <li class="nav-item">
+           <a class="nav-link" href="https://api.whatsapp.com/send?phone=59398550167"> <img src="Imagenes/whatsapp.svg" alt="facebook">  whatsapp</a>
+           </li>
+           
+      </ul>
+	  <!--<nav class="navbar navbar-expand-lg navbar-light shadow-sm">-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-xl">   
       <div class="container">
        <!-- <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupport">
@@ -59,7 +59,7 @@
               <a class="nav-link" href="index.php">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Productos</a>
+              <a class="nav-link" href="Vistas/articulos.php">Productos</a>
             </li>
              <li class="nav-item">
               <a class="nav-link" href="contact.html">Contactos</a>
@@ -108,7 +108,7 @@ while($row = mysqli_fetch_array($result))
     <div class="col-4">
         <h4 class="text-info text-lg-start"><?php echo $row[0]; ?></h4>
         <h2 class="badge bg-primary">$ <?php echo $row[2]; ?></h2>
-        <input type="text" name="quantity" class="form-control" value="1"><caption>Cantidad : </caption> </input>
+        <input type="text" name="quantity" class="form-control" value="1" size="5" ><caption>Cantidad : </caption> </input>
         <h6><?php echo $row[3]; ?></h6>
      </div>    
    
@@ -120,49 +120,34 @@ while($row = mysqli_fetch_array($result))
 }
 }
 ?>
-<footer id="fh5co-footer" role="contentinfo" style="background-image: url(imagenes/img_bg_4.jpg);">
+<footer id="fh5co-footer" role="contentinfo" style="background-image: url(imagenes/project-5.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-3 fh5co-widget">
-					<h3>Acerca de Nuestros Servicio</h3>
-					<p>Contamos con las mejores marcas</p>
+				<div class="col-md-6 fh5co-widget">
+					<h3>silkyclothes.ec</h3>
+					<p>S I L K Y• S W I M W E A R</p>
 				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Cursos</h3>
+				<!--<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">-->
+        <div  class="col-sm-6"> 
+        <h3>Servicios y Productos</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="senecyt.html">SENECYT</a></li>
-						<li><a href="#">NetWorking</a></li>
-						<li><a href="#">Contabilidad</a></li>
-						<li><a href="#">Mantenimiento de Computadoras</a></li>
-						<li><a href="#">Programación WEB</a></li>
+						<li><a href="#">Sliky Girls</a></li>
+						<li><a href="#">Disponibles</a></li>
+						<li><a href="#">Envios</a></li>
+						<li><a href="#">Kimonos</a></li>
 					</ul>
 				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Servicios</h3>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Mantenimiento y Venta de Equipos</a></li>
-						<li><a href="#">Desarrollo de Software</a></li>
-						<li><a href="#">Venta de Equipos</a></li>
-						<li><a href="#">Declaraciones Tributarias</a></li>
-						<li><a href="#">Servicos Contables</a></li>
-						<li><a href="#">Diseño de Paginas WEB</a></li>
-					</ul>
-				</div>
-				
 			</div>
 		</div> 
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">Centro de formación Integral Bucay </small> 
-						<small class="block">Gerente General : <span> ECON. KATE SORROSA </span></a></small>
+						<small class="block">Gerente General : <span> Econ. Kate Sorrosa </span></a></small>
 					</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 

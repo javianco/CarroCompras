@@ -6,8 +6,6 @@
 	$idcleinte= 1;
 	$ncliente="";
 
-
-
 	$sql="SELECT nombre,apellido 
 	FROM usuario WHERE id_usuario='$idcleinte'";
 			
